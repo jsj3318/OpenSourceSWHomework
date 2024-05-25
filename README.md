@@ -44,3 +44,33 @@
 
 #### 단축키
 
+- **h**: 도움말
+- **k**: 프로세스 종료
+- **q**: top 종료
+- **z**: 색상 활성화/비활성화
+- **1**: CPU 코어별 사용량 표시
+
+#### 옵션
+
+- -d SECONDS: 업데이트 주기 설정
+- -p PID: 특정 프로세스 모니터링
+- -u USER: 특정 사용자의 프로세스만 표시
+- -n ITERATION: 지정한 횟수만큼 업데이트 후 종료
+
+예시: 3초 간격으로 5번 업데이트 후 종료
+```bash
+top -d 3 -n 5
+```
+
+#### top 실행 화면
+![image](https://github.com/jsj3318/OpenSourceSWHomework/assets/168888761/782d1e74-2937-4077-a6f6-2d7fec2f4250)
+
+#### top 도움말 화면
+![image](https://github.com/jsj3318/OpenSourceSWHomework/assets/168888761/eecc2345-7fbb-4e68-a354-0c05d03b1b7c)
+
+#### top 색상 활성화
+![image](https://github.com/jsj3318/OpenSourceSWHomework/assets/168888761/db9ecdfd-dfe1-41e9-887d-fcd830e26a9e)
+
+---
+
+###
