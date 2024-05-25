@@ -135,3 +135,43 @@ kill %1
 
 ---
 
+### kill
+
+> kill 명령어는 리눅스에서 프로세스를 종료하거나 신호를 보낸다. 기본값으로 종료신호를 보낸다.
+
+```bash
+kill [options] <PID>
+```
+
+#### 옵션
+
+- -l [signal]: 모든 신호 이름을 나열하거나 특정 신호 번호의 이름 표시
+```bash
+kill -l
+kill -l 5
+```
+
+- -s <signal> 신호 지정
+```bash
+kill -s SIGKILL PID
+kill -s 9 PID
+```
+
+- -9 또는 -SIGKILL: 강제 종료
+
+#### 주요 신호
+
+신호 이름 | 번호 | 기능
+---------| ------ | -------
+**SIGTERM** | **15** | 기본 종료 신호. 정리할 시간을 주고 종료
+**SIGKILL** | **9** | 강제 종료 신호. 정리할 시간 안 주고 종료
+**SIGHUP** | **1** | 종료 후 재시작
+**SIGINT** | **2** | 인터럽트 신호. 보통 Ctrl+C로 보냄
+**SIGSTOP** | **19** | 프로세스 일시 중단
+**SIGCONT** | **18** | 일시 중단된 프로세스 계속 실행
+
+#### jobs와 kill로 백그라운드 작업 확인하고 종료하기
+![image](https://github.com/jsj3318/OpenSourceSWHomework/assets/168888761/107d3f18-5e5c-462c-bbac-b00632b0b76f)
+
+---
+
